@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ComicsController; // Importa il controller
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +19,6 @@ Route::get('/', function () {
     $dati = config("data");
     return view('home', $dati);
 })->name("home");
+
+Route::resource('/comics', ComicsController::class);
+

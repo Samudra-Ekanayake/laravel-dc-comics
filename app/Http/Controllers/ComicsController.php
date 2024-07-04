@@ -1,18 +1,19 @@
 <?php
 
-namespace App\Http\Controllers\Guest;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class pageController extends Controller
+class ComicsController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        $fumetti = config('store');
+
+        return view('comics.index', compact('fumetti'));
     }
 
     /**
