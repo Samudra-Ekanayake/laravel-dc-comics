@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
-<h1>Lista fumetti</h1>
+{{-- <h1>Lista fumetti</h1>
 
-@foreach ($store as $comics)
-<h1>{{ $comics['title'] }}</h1>
-<img src="{{ $comics['thumb'] }}" alt="">
-{{-- <p>{{ $comics['description'] }}</p> --}}
+@foreach ($fumetti as $fumetto)
+<h1>{{ $fumetto['title'] }}</h1>
+<img src="{{ $fumetto['thumb'] }}" alt="">
+<p>{{ $fumetto['description'] }}</p>  --}}
 
 @endforeach

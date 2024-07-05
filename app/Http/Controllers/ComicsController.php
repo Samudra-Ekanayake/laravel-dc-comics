@@ -13,7 +13,7 @@ class ComicsController extends Controller
     {
         $fumetti = config('store');
 
-        return view('comics.index', compact('fumetti'));
+        return view('index', compact('fumetti'));
     }
 
     /**

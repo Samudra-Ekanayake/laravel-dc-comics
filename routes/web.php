@@ -20,5 +20,9 @@ Route::get('/', function () {
     return view('home', $dati);
 })->name("home");
 
-Route::resource('/comics', ComicsController::class);
+Route::resource('/index', ComicsController::class);
+Route::resource('/show', ComicsController::class);
+Route::resource('/create', ComicsController::class);
+
+
 
