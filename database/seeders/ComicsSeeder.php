@@ -31,7 +31,6 @@ class ComicsSeeder extends Seeder
             $nuovoFumetto->writers = json_encode($faker->words(3));
 
             $nuovoFumetto->save();
-            
 
            /*  Comic::create([
                 'title' => $faker->sentence(3),
